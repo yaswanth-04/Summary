@@ -1,0 +1,70 @@
+<div class="container p-3">
+
+    <input type="file" (change)="onFileSelected($event)" class="form-control mb-2">
+    <button (click)="onUpload()" class="btn btn-primary mb-2">Upload</button>
+<div class="table-responsive" style="max-height: 400px; overflow: auto;">
+    <table class="table table-striped table-secondary overflow-scroll pivot-table">
+      <thead class="table-dark">
+        <tr>
+          
+          <th scope="col" class="table-heading">sbunew</th>
+          <th scope="col" class="table-heading">Parent Account</th>
+          <th scope="col" class="table-heading">Head Count</th>
+          <th scope="col" class="table-heading">BB Index</th>
+          <th scope="col" class="table-heading">Associates Trained</th>
+          <th scope="col" class="table-heading">Idea Generation</th>
+          <th scope="col" class="table-heading">Idea Implementation</th>
+          <th scope="col" class="table-heading">Bussiness Impact Client</th>
+          <th scope="col" class="table-heading">Bussiness Impact Cognizant</th>
+          <th scope="col" class="table-heading">Training Actuals</th>
+          <th scope="col" class="table-heading">Idea Generation Actuals</th>
+          <th scope="col" class="table-heading">Idea Implementation Actuals</th>
+          <th scope="col" class="table-heading">Revenue For Client Actuals</th>
+          <th scope="col" class="table-heading">Revenue For Cognizant Actuals</th>
+          <th scope="col" class="table-heading">Cost Saving For Client Actuals</th>
+          <th scope="col" class="table-heading">Cost Saving For Cognizant Actuals</th>
+          <th scope="col" class="table-heading">Training Target</th>
+          <th scope="col" class="table-heading">Idea Generation Target</th>
+          <th scope="col" class="table-heading">Idea Implementation Target</th>
+          <th scope="col" class="table-heading">Revenue For Client Target</th>
+          <th scope="col" class="table-heading">Revenue For Cognizant Target</th>
+          <th scope="col" class="table-heading">Cost Saving For Client Target</th>
+          <th scope="col" class="table-heading">Cost Saving For Cognizant Target</th>
+
+
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let element of allAccountData">
+          
+          <td>{{element.sbunew}}</td>
+          <td>{{element.parentAccount}}</td>
+          <td>{{element.headCount}}</td>
+          <td>{{element.bbIndex}}</td>
+          <td>{{element.associatesTrained}}</td>
+          <td>{{element.ideaGeneration}}</td>
+          <td>{{element.ideaImplementation}}</td>
+          <td>{{element.bussinessImpactClient}}</td>
+          <td>{{element.bussinessImpactCognizant}}</td>
+          <td>{{element.trainingActuals}}</td>
+          <td>{{element.ideaGenerationActuals}}</td>
+          <td>{{element.ideaImplementationActuals}}</td>
+          <td>{{element.costSavingForClientActuals}}</td>
+          <td>{{element.costSavingForCognizantActuals}}</td>
+          <td>{{element.revenueForClientActuals}}</td>
+          <td>{{element.revenueForCognizantActuals}}</td>
+          <td>{{element.trainingTarget}}</td>
+          <td>{{element.ideaGenerationTarget}}</td>
+          <td>{{element.ideaImplementationTarget}}</td>
+          <td>{{element.revenueForClientTarget}}</td>
+          <td>{{element.revenueForCognizantTarget}}</td>
+          <td>{{element.costSavingForClientTarget}}</td>
+          <td>{{element.costSavingForCognizantTarget}}</td>
+        
+        </tr>
+       
+      </tbody>
+    </table>
+</div>
+</div>

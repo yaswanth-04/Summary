@@ -1,0 +1,11 @@
+.pivot-table{
+    border-right: 1px solid black;
+}
+column-scroll{
+    max-height:5px;
+    overflow-y: auto;
+    
+}
+.table-heading{
+    border-right: 1px solid rgb(252, 250, 250);
+}
